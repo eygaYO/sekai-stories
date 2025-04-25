@@ -1,0 +1,57 @@
+@import "colors";
+@import "fonts";
+@import "text";
+@import "button";
+@import "checkbox";
+@import "textbox";
+@import "slider";
+@import "selectbox";
+@import "props";
+@import "content";
+@import "sidebar";
+@import "announcements";
+@import "support";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans JP", sans-serif;
+    transition: all 0.2s;
+}
+
+body {
+    min-height: 100dvh;
+}
+
+main {
+    display: flex;
+    height: 100%;
+    @media (width > 768px) {
+        flex-direction: row;
+    }
+    @media (width <= 768px) {
+        flex-direction: column;
+    }
+}
+
+img {
+    box-shadow: none;
+    border: 0px;
+    object-fit: cover;
+}
+
+canvas {
+    width: 90%;
+    font-family: "FOT-RodinNTLGPro-DB", "FOT-RodinNTLGPro-EB";
+    border: $dark-miku 2px solid;
+    @media (width <= 768px) {
+        position: fixed;
+        z-index: 1;
+        top: 20px;
+    }
+}
+
+i {
+    color: $black;
+}
